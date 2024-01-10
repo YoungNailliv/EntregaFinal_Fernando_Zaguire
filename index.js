@@ -1,9 +1,10 @@
 import indexElements from "./src/index.elements";
 import { checkLogin } from "./src/index.managment";
 
-const app = () => {
+const index = () => {
     console.log("Ejecutando el login");
     indexElements.formLogin.onsubmit = (event) =>{
+        event.preventDefault();
         if(checkLogin()){
             event.preventDefault();
             checkLogin();
@@ -13,4 +14,4 @@ const app = () => {
     }
 };
 
-app()
+index()

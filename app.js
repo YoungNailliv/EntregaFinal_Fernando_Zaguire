@@ -1,4 +1,3 @@
-import { crearCliente } from "./src/models/models";
 import { ventanaCrearCliente, cargarListadoClientes, resetInputs } from "./src/managers/app.manager";
 
 const main = () => {
