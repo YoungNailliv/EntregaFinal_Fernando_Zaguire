@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bodyMain">
+    <nav class="navbar">
+        <img src="./assets/logo_light_mode.png" alt="" class="logoNavbar">
+        <ul class="opcionesNavbar">
+            <li class="active"><img src="./assets/people.svg" alt=""> Clientes</li>
+            <li id="tabClientes" class="nonActive"><img src="./assets/person-workspace.svg" alt=""> Trabajadores</li>
+            <li class="nonActive"><img src="./assets/houses.svg" alt=""> Ordenes de trabajo</li>
+            <li class="nonActive"><img src="./assets/coin.svg" alt=""> Flujo de caja</li>
+        </ul>
+        <div class="lightDarkMode">
+            <button><img src="./assets/moon-stars.svg" alt=""><img class="sol" src="./assets/brightness-low.svg" alt=""> Dark Mode</button>
+        </div>
+    </nav>
+    
+    
+    <main>
+        <h1 class="tabTitulo">Menu Clientes</h1>
+        
+        
+        <div class="menuClientes">
+            <div class="ventana ventanaAgregarClientes">
+                <h2>Agregar clientes</h2>
+                <form action="" id="formAgregarCliente" class="formulario">
+                    <div class="campoFormulario">
+                        <label for="inputNombreCliente" >Nombre: </label>
+                        <input type="text" id="inputNombreCliente" placeholder="John Doe">
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="inputRutCliente" >Rut: </label>
+                        <input type="text" id="inputRutCliente" placeholder="2222222-4">
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="inputDireccionCliente" >Direccion: </label>
+                        <input type="text" id="inputDireccionCliente" placeholder="Av. Calle cualquiera 123">
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="inputEmailCliente" >Email: </label>
+                        <input type="email" id="inputEmailCliente" placeholder="ejemplo@correo.cl">
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="inputTelefonoCliente">Telefono: </label>
+                        <input type="text" id="inputTelefonoCliente" placeholder="+56 9 44444444">
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="inputReferenciaCliente" >Contacto Referencia: </label>
+                        <input type="text" id="inputReferenciaCliente" placeholder="Don Pepito">
+                    </div>
+                    <input type="submit" value="Agregar" class="btn btnAgregarClientes">
+                </form>
+            </div>
+            
+            
+            
+            
+            <div class="ventana ventanaAgregarClientes" id="ventanaModificarCliente">
+                <h2>Modificar Datos Cliente</h2>
+                <p id="idClienteModificar">ID Cliente:</p>
+                <form action="" id="formModificarCliente" class="formulario">
+                    <div class="campoFormulario">
+                        <label for="modificarNombreCliente" >Nuevo Nombre: </label>
+                        <input type="text" id="modificarNombreCliente">
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="modificarRutCliente" >Nuevo Rut: </label>
+                        <input type="text" id="modificarRutCliente">
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="modificarDireccionCliente" >Nueva Direccion: </label>
+                        <input type="text" id="modificarDireccionCliente">
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="modificarEmailCliente" >Nuevo Email: </label>
+                        <input type="email" id="modificarEmailCliente" >
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="modificarTelefonoCliente">Nuevo Telefono: </label>
+                        <input type="text" id="modificarNombreCliente">
+                    </div>
+                    <div class="campoFormulario">
+                        <label for="modificarReferenciaCliente" >Nuevo Contacto Referencia: </label>
+                        <input type="text" id="modificarReferenciaCliente">
+                    </div>
+                    <input type="submit" value="Modificar" class="btn btnAgregarClientes">
+                </form>
+            </div>
+            <div class="ventana ventanaListaClientes">
+                <h2>Clientes</h2>
+                <input type="search" name="buscarCliente" id="buscarCliente" placeholder="Ingresa el nombre del cliente">
+                
+                
+                
+                
+                
+                <!-- Modelo Card Cliente -->
+                <div class="cardsClientes" id="cardsClientes">
+                    <!-- <div class="cardCliente">
+                        <div class="infoCliente">
+                            <p class="keyCliente">
+                                ID: <br>
+                                Fecha Ingreso: <br>
+                                Nombre: <br>
+                                RUT: <br>
+                                Direccion: <br>
+                                Email: <br>
+                                Telefono: <br>
+                                Contacto <br>
+                            </p>
+                            <p class="valueCliente">
+                                0 <br>
+                                12 de Abril 2020<br>
+                                Prueba Ejemplo<br>
+                                20222222-2<br>
+                                Siempre viva 123<br>
+                                ejemplo@correo.cl <br>
+                                +56 9 99999999<br>
+                                WestSideGunn<br>
+                            </p>
+                        </div>
+                        <div class="btnsCard">
+                            <button class="btnCard modificarCard "><img src="./assets/pencil.svg" alt=""> </button>
+                            <button class="btnCard eliminarCard"><img src="./assets/x.svg" alt=""> </button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
